@@ -12,3 +12,9 @@ http://www.oracle.com/technetwork/java/jsapifaq-135248.html
 
 ibm watson tts
 https://github.com/watson-developer-cloud/text-to-speech-java
+
+ibm watson sdk
+https://github.com/watson-developer-cloud/java-sdk
+
+ibm watson speech to text demo
+https://speech-to-text-demo.mybluemix.net/
