@@ -21,3 +21,6 @@ https://speech-to-text-demo.mybluemix.net/
 
 marytts
 http://mary.dfki.de/faq.html
+
+android tts tutorial
+https://code.tutsplus.com/tutorials/use-text-to-speech-on-android-to-read-out-incoming-messages--cms-22524
