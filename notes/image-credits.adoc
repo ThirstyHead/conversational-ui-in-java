@@ -1,0 +1,26 @@
+Conversation
+https://pixabay.com/p-2044702/?no_redirect
+
+speech bubbles
+https://pixabay.com/p-1262311/?no_redirect
+
+yellow speech bubbles
+https://pixabay.com/p-1468159/?no_redirect
+
+java speech api faq
+http://www.oracle.com/technetwork/java/jsapifaq-135248.html
+
+ibm watson tts
+https://github.com/watson-developer-cloud/text-to-speech-java
+
+ibm watson sdk
+https://github.com/watson-developer-cloud/java-sdk
+
+ibm watson speech to text demo
+https://speech-to-text-demo.mybluemix.net/
+
+marytts
+http://mary.dfki.de/faq.html
+
+android tts tutorial
+https://code.tutsplus.com/tutorials/use-text-to-speech-on-android-to-read-out-incoming-messages--cms-22524

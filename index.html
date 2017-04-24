@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Conversational UIs in Java and Groovy</title>
+    <link rel="stylesheet" href="bower_components/talk-o-vision/talk-o-vision.css">
+    <style>
+      .title-slide{
+        background: url('slides/title/img/three-people-talking.jpg') no-repeat center center;
+        background-size: contain;
+      }
+
+      .banner {
+        background-color: black;
+        opacity: 0.7;
+        width: 100%;
+      }
+
+      .banner-title {
+        font-size: 1em;
+        text-align: left;
+        padding: 0.5em;
+        padding-left: 20%;
+        padding-right: 20%;
+      }
+
+      .banner-title h1 {
+        font-size: 1.5em;
+        text-transform: none;
+        font-weight: bold;
+      }
+
+      .banner-title h2 {
+        font-size: 1em;
+        text-transform: none;
+        font-style: italic;
+      }
+
+      .banner-bio {
+        font-size: 0.5em;
+        text-align: right;
+        padding-right: 20%;
+        padding-bottom: 1em;
+      }
+
+      .banner-bio a{
+        color: white;
+      }
+
+      p{
+        width: 75%;
+        text-align: center;
+        padding-left: 12%;
+      }
+
+      .full-height{
+        height: 100vh;
+        /*width: 100vw;*/
+      }
+
+      .full-width{
+        /*height: 100vh;*/
+        width: 100vw;
+      }
+
+      .partial-height{
+        height: 75%;
+        max-height: 75%;
+      }
+
+      .half-img{
+        max-width: 75%;
+        margin-top: 1rem;
+      }
+
+      .top-margin{
+        margin-top: 1rem;
+      }
+
+      .section-title{
+        position: relative;
+        top: 50%;
+        transform: perspective(1px) translateY(-50%);
+      }
+
+      .sub-title{
+        margin: 0;
+        margin-top: -2rem;
+      }
+
+      table th, table td {
+          text-align: left;
+          padding: 0.2em 0.5em 0.2em 0.5em;
+          /*border-bottom: 1px solid;*/
+      }
+      table {
+          margin: auto;
+          padding-left: 20%;
+          border-collapse: collapse;
+          border-spacing: 0;
+      }
+
+      ol{
+        width: 75%;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+    <ol class="slideshow">
+      <li class="title-slide">
+          <div class="banner">
+            <div class="banner-title">
+              <h1>Conversational UIs in Java and Groovy</h1>
+            </div>
+            <div class="banner-bio">
+              Scott Davis <br>
+              <a href="mailto:sdavis@thoughtworks.com">sdavis@thoughtworks.com</a> <br>
+              <a href="https://twitter.com/scottdavis99?lang=en">@scottdavis99</a>
+            </div>
+          </div>
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/bio/img/scott-davis-bio.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/gartner-voice-ui/img/gartner-voice-ui.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/backchannel-voice-is-big/img/backchannel-voice-is-big.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/java/img/java-logo.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/android-vs-windows-marketshare/img/android-vs-windows-marketshare.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li>
+        &nbsp;
+      </li>
+
+
+
+
+
+
+      <li>
+        <h2>Java Speech API (JSAPI)</h2>
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/java-speech-api/img/java-speech-api-faq.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/java-speech-api/img/java-speech-api-faq-2.png"
+             alt=""
+             class="full-width">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/java-speech-api/img/java-speech-api-faq-3.png"
+             alt=""
+             class="full-width">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/java-speech-api/img/java-speech-api-faq-4.png"
+             alt=""
+             class="full-width">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/java-speech-api/img/jsapi-implementations.png"
+             alt=""
+             class="full-height">
+      </li>
+
+
+      <li>
+        &nbsp;
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+      <li>
+        <h2>FreeTTS</h2>
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/freetts/img/freetts-github.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li>
+        <h2>FreeTTS Hello World</h2>
+        <pre><code>
+$ java -jar bin/HelloWorld.jar
+
+All general Mode JSAPI Synthesizers
+and Voices:
+    FreeTTS en_US general synthesizer
+    (mode=general, locale=en_US):
+        kevin
+        kevin16
+
+Using voice: kevin16
+        </code></pre>
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/freetts/img/freetts-helloworld-src.png"
+             alt=""
+             class="full-height">
+      </li>
+
+
+      <li class="bg-white">
+        <img src="slides/freetts/img/freetts-helloworld-src-2.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/java-speech-api/img/javax.speech.synthesizer.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/java-speech-api/img/javax.speech.synthesizer.speak.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li>
+        &nbsp;
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+      <li>
+        <h2>MaryTTS</h2>
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/marytts/img/marytts-home.png"
+             alt=""
+             class="full-width">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/marytts/img/marytts-faq.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/marytts/img/marytts-run.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/marytts/img/marytts-web-client.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li>
+        &nbsp;
+      </li>
+
+
+
+
+
+
+
+      <li>
+        <h2>IBM Watson</h2>
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/ibm-watson/img/ibm-watson-home.png"
+             alt=""
+             class="full-height">
+      </li>
+
+
+      <li class="bg-white">
+        <img src="slides/ibm-watson/img/ibm-watson-sdk.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/ibm-watson/img/ibm-watson-tts-github.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <h2><a href="https://speech-to-text-demo.mybluemix.net/">https://speech-to-text-demo.mybluemix.net/</a></h2>
+        <img src="slides/ibm-watson/img/ibm-watson-speech-to-text-demo.png"
+             alt=""
+             class="full-width">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/ibm-watson/img/ibm-watson-speech-to-text-demo-2.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/ibm-watson/img/ibm-watson-tts-helloworld.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/ibm-watson/img/ibm-watson-tts-src.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li>
+        &nbsp;
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+      <li>
+        <h2>Android</h2>
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/android-tts/img/android-tts-home.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/android-tts/img/android-tts-1.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/android-tts/img/android-tts-2.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/android-tts/img/android-tts-3.png"
+             alt=""
+             class="full-width">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/android-tts/img/android-tts-5.png"
+             alt=""
+             class="full-width">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/android-tts/img/android-tts-5a.png"
+             alt=""
+             class="full-width">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/android-tts/img/android-tts-5b.png"
+             alt=""
+             class="full-width">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/android-tts/img/android-tts-5c.png"
+             alt=""
+             class="full-width">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/android-tts/img/android-tts-5d.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li>
+        &nbsp;
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+      <li class="bg-white">
+        <img src="slides/gartner-voice-ui/img/gartner-voice-ui.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/freetts/img/freetts-github.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/marytts/img/marytts-home.png"
+             alt=""
+             class="full-width">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/ibm-watson/img/ibm-watson-home.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/android-tts/img/android-tts-home.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/android-vs-windows-marketshare/img/android-vs-windows-marketshare.png"
+             alt=""
+             class="full-height">
+      </li>
+
+
+
+      <li class="title-slide">
+          <div class="banner">
+            <div class="banner-title">
+              <h1>Conversational UIs in Java and Groovy</h1>
+            </div>
+            <div class="banner-bio">
+              Scott Davis <br>
+              <a href="mailto:sdavis@thoughtworks.com">sdavis@thoughtworks.com</a> <br>
+              <a href="https://twitter.com/scottdavis99?lang=en">@scottdavis99</a>
+            </div>
+          </div>
+      </li>
+
+
+
+
+
+
+    </ol>
+
+
+    <script src="bower_components/talk-o-vision/talk-o-vision.js"></script>
+  </body>
+</html>

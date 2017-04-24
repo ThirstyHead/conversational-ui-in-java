@@ -1,0 +1,21 @@
+{
+  "name": "conversational-ui-in-java",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ThirstyHead/conversational-ui-in-java",
+  "authors": [
+    "Scott Davis <scott@thirstyhead.com>"
+  ],
+  "description": "PRESENTATION: Conversational UIs in Java and Groovy",
+  "main": "index.html",
+  "license": "CC-4.0-BY",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "talk-o-vision": "thirstyhead/talk-o-vision#^0.2.1"
+  }
+}
